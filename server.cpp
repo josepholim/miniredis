@@ -40,6 +40,7 @@ int main() {
     int val = 1;
     setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &val, sizeof(val));
 
+    // bind
     struct sockaddr_in addr = {};
     addr.sin_family = AF_INET;
     addr.sin_port = htons(1234);        // port
